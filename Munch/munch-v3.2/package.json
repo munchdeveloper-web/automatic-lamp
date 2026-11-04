@@ -1,0 +1,41 @@
+{
+  "name": "munch-near-me",
+  "private": true,
+  "version": "3.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "db:setup": "node --env-file=.env.local db/setup.mjs",
+    "db:seed": "node --env-file=.env.local db/seed.mjs",
+    "db:verify": "node --env-file=.env.local db/verify.mjs",
+    "db:prune": "node --env-file=.env.local db/prune.mjs",
+    "db:retention": "node --env-file=.env.local db/retention.mjs"
+  },
+  "dependencies": {
+    "@clerk/backend": "^3.26.5",
+    "@clerk/react": "^6.18.4",
+    "@neon/config": "^1.10.0",
+    "@neon/env": "^1.6.8",
+    "@neondatabase/serverless": "^1.2.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.562.0",
+    "maplibre-gl": "^6.3.0",
+    "motion": "^12.23.24",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/geojson": "^7946.0.16",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
